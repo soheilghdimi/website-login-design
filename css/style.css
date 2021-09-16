@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 100fr / repeat(2, 50fr);
+    grid-template-areas: "login-image login-inputs";
+}
+@media screen and (max-width: 550px){
+    .main-container{
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "login-inputs";
+        font-size: 12px;
+    }
+}
+
+.login-image {
+    grid-area: login-image;
+    background-image: url("../images/image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*width: 400px;*/
+}
+
+.login-inputs {
+    grid-area: login-inputs;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+    width: 500px;
+}
+@media screen and (max-width: 550px){
+    .login-inputs {
+        grid-area: login-inputs;
+        display: flex;
+        flex-direction: column;
+        margin: 0 5rem;
+        width: 400px;
+    }
+}
+
+.logo-container {
+    width: 150px;
+    height: 50px;
+    background-image: url("/images/logo.png");
+    margin: 60px 170px;
+}
+@media screen and (max-width: 550px){
+    .logo-container {
+        width: 130px;
+        height: 40px;
+        background-image: url("/images/logo.png");
+        margin: 60px 140px;
+        background-size: cover;
+    }
+}
+
+.welcome-title {
+    font-size: 2rem;
+    color: #616161;
+}
+@media screen and (max-width: 550px){
+    .welcome-title{
+        font-size: 1.7rem;
+    }
+}
+
+.form-style{
+    margin-bottom: 0;
+}
+@media screen and (max-width: 550px) {
+    .form-style {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    label{
+        font-size: 1.4rem;
+    }
+}
+
+a{
+    cursor: pointer;
+}
+
+.or{
+    margin-top:30px;
+    text-align: center;
+}
+
+.gmail{
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.account{
+    text-align: center;
+    margin-top: 40px;
+}
+u{
+    cursor: pointer;
+}
